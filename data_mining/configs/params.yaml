@@ -1,0 +1,33 @@
+# Đường dẫn dữ liệu
+data:
+  raw_path: "data/raw/ai4i2020.csv"
+  processed_path: "data/processed/cleaned_data.csv"
+
+# Tham số chia dữ liệu
+split:
+  test_size: 0.2
+  random_state: 42
+
+# Danh sách các cột cảm biến
+features:
+  numerical: 
+    - "Air temperature [K]"
+    - "Process temperature [K]"
+    - "Rotational speed [rpm]"
+    - "Torque [Nm]"
+    - "Tool wear [min]"
+  categorical:
+    - "Type"
+  target: "Machine failure"
+  failure_types:
+    - "TWF"
+    - "HDF"
+    - "PWF"
+    - "OSF"
+    - "RNF"
+  
+# Tham số khai phá
+mining:
+  n_clusters: 3
+  min_support: 0.001
+  min_threshold: 1.0

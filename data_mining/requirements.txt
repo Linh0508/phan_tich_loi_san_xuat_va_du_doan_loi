@@ -1,0 +1,19 @@
+# Data Manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning & Modeling
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+joblib>=1.2.0
+
+# Data Mining (Association Rules)
+mlxtend>=0.22.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+pyyaml>=6.0
+openpyxl>=3.1.0
